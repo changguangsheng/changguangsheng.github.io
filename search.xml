@@ -8,7 +8,7 @@
   <entry>
     <title><![CDATA[动态规划学习]]></title>
     <url>%2F2019%2F09%2F11%2F%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%E5%AD%A6%E4%B9%A0%2F</url>
-    <content type="text"><![CDATA[#动态规划部分简介 动态规划应用于子问题重叠的情况： 要去刻画最有界的结构特征; 尝试递归地定义最优解的值(就是我们常说的考虑从\mathsf{i})]]></content>
+    <content type="text"><![CDATA[DP（又称动态规划） 学了两年都没学明白,为了最后半年的区域赛,系统的学一下,更好的准备接下来的比赛. #动态规划部分简介 动态规划应用于子问题重叠的情况： 要去刻画最有界的结构特征; 尝试递归地定义最优解的值(就是我们常说的考虑从\mathsf{i})]]></content>
       <categories>
         <category>DP</category>
         <category>kuangbin</category>
