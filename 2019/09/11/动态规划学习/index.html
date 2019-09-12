@@ -89,7 +89,7 @@
 <meta property="og:site_name" content="ccdxc&#39;Blog">
 <meta property="og:description" content="DP（又称动态规划） 学了两年都没学明白,为了最后半年的区域赛,系统的学一下,更好的准备接下来的比赛.">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-09-12T12:46:39.232Z">
+<meta property="og:updated_time" content="2019-09-12T13:40:24.795Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="动态规划学习">
 <meta name="twitter:description" content="DP（又称动态规划） 学了两年都没学明白,为了最后半年的区域赛,系统的学一下,更好的准备接下来的比赛.">
@@ -381,8 +381,29 @@
 <ol>
 <li>要去刻画最有界的结构特征;</li>
 <li>尝试递归地定义最优解的值(就是我们常说的考虑从$i-1$到$i$)</li>
+<li>计算最优值</li>
+<li>利用计算出的信息构造一个最优解</li>
 </ol>
 </blockquote>
+<h3 id="经典例题"><a href="#经典例题" class="headerlink" title="经典例题"></a>经典例题</h3><p>给定一段钢条，和不同长度的价格，问如何切割使得总价格最大。</p>
+<p>为了求解规模为$n$的原问题，我们先求解形式完全一样，但规模更小的子问题。 即当完成首次切割后，我们将两段钢条看成两个独立的钢条切割问题实例。 我们通过组合相关子问题的最优解，并在所有可能的两段切割方案中选取组合收益最大者，构成原问题的最优解。</p>
+<blockquote>
+<p>最优子结构： 问题的最优解由相关自问题的最优解组合而成<br>动态规划的两种实现方法：</p>
+</blockquote>
+<ul>
+<li>带备忘的自定向下法（记忆化搜索）;</li>
+<li>自底向上法（将子问题按照规模排序，类似于递推）。<br>算导用子问题图上按照逆拓扑排序求解子问题，引出记忆化搜索。<br>重构解（输出方案）： 转移的时候记录最优子结构的位置。</li>
+</ul>
+<h3 id="矩阵链乘法"><a href="#矩阵链乘法" class="headerlink" title="矩阵链乘法"></a>矩阵链乘法</h3><p>给出$n$个矩阵的序列，希望计算他们的乘积，问最少需要多少次乘法运算？<br>（认为$p \times q $的矩阵与$q \times r$的矩阵相乘的代价是$p \times q \times r$）<br>完全括号化方案是指要给出谁先和谁乘。</p>
+<h3 id="动态规划原理"><a href="#动态规划原理" class="headerlink" title="动态规划原理"></a>动态规划原理</h3><p>两个要素：</p>
+<h4 id="最优子结构"><a href="#最优子结构" class="headerlink" title="最优子结构"></a>最优子结构</h4><p>具有最优子结构也可能是适合用贪心的方法求解。<br>注意要确保我们考察了解最优解中用到的所有子问题。</p>
+<ol>
+<li>证明问题最优解的第一个组成部分是作出一个选择;</li>
+<li>对于一个给定问题，在其可能的第一步选择中，你界定已经知道那种选择才会得到最优解。你现在并不关心这种选择具体是如何得道的，只是假定已经知道了这种选择;</li>
+<li>定可获得的最优解的选择后，确定这次选择会产生哪些子问题，以及如何最好地刻画子问题空间；</li>
+<li>证明作为构成原问题最优解的组成部分，每个子问题的解就是它本身的最优解。方法是反证法，考虑加入某个子问题的解不是其自身的最优解，那么就可以从原问题的解中用该子问题的最优解替换掉当前的非最优解，从而得到原问题的一个更优的解，从而与原问题最优解的假设矛盾。<br>要保持子问题空间尽量简单，只在必要时扩展。</li>
+</ol>
+<p>后续待定$\ldots$</p>
 
     </div>
 
@@ -472,7 +493,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#动态规划部分简介"><span class="nav-number">1.</span> <span class="nav-text">动态规划部分简介</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#动态规划部分简介"><span class="nav-number">1.</span> <span class="nav-text">动态规划部分简介</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#经典例题"><span class="nav-number">1.0.1.</span> <span class="nav-text">经典例题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#矩阵链乘法"><span class="nav-number">1.0.2.</span> <span class="nav-text">矩阵链乘法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#动态规划原理"><span class="nav-number">1.0.3.</span> <span class="nav-text">动态规划原理</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#最优子结构"><span class="nav-number">1.0.3.1.</span> <span class="nav-text">最优子结构</span></a></li></ol></li></ol></li></ol></li></ol></div>
         
       </div>
       <!--/noindex-->
