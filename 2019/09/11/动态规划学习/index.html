@@ -89,7 +89,7 @@
 <meta property="og:site_name" content="ccdxc&#39;Blog">
 <meta property="og:description" content="DP（又称动态规划） 学了两年都没学明白,为了最后半年的区域赛,系统的学一下,更好的准备接下来的比赛.">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-09-12T11:27:36.535Z">
+<meta property="og:updated_time" content="2019-09-12T11:57:37.678Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="动态规划学习">
 <meta name="twitter:description" content="DP（又称动态规划） 学了两年都没学明白,为了最后半年的区域赛,系统的学一下,更好的准备接下来的比赛.">
@@ -394,7 +394,7 @@
 <li><script type="math/tex; mode=display">\lim_{n \to \infty}\sum_{k=1}^n\frac{1}{k^2}=\frac{\pi^2}{6}</script></li>
 <li>$\forall x\in\mathbf{R}:\qquad x^2\geq 0$</li>
 <li>$x^2 \geq 0 \qquad \textrm{for all} x \in \mathbf{R}$</li>
-<li>$x^2 \geq 0 \qquad \textrm{for all} x \in \mathbb{R}$</li>
+<li>$x^2 \geq 0 \qquad \textrm{for all} x \in \mathbb{R}$<br>$f(x)=ax+b$</li>
 </ol>
 
     </div>
@@ -698,7 +698,24 @@ NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
     path: location.pathname
   });
 }, window.Valine);
-</script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+</script><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config("");
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+      all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+</script>
+
+<script type="text/javascript" src="">
+</script>
+<!-- End: Injected MathJax -->
+<!-- hexo-inject:end -->
 
 </body>
 </html>
