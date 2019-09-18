@@ -81,17 +81,19 @@
     }
 </style>
 
-  <meta name="description" content="技术源于生活">
-<meta property="og:type" content="website">
-<meta property="og:title" content="ccdxc&#39;Blog">
-<meta property="og:url" content="http://yoursite.com/tags/DP-记忆化搜索/index.html">
+  <meta name="description" content="题目链接">
+<meta name="keywords" content="树形DP,点分治">
+<meta property="og:type" content="article">
+<meta property="og:title" content="2019年icpc沈阳网络赛D题">
+<meta property="og:url" content="http://yoursite.com/2019/09/18/2019年icpc沈阳网络赛D题/index.html">
 <meta property="og:site_name" content="ccdxc&#39;Blog">
-<meta property="og:description" content="技术源于生活">
+<meta property="og:description" content="题目链接">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2019-09-18T13:01:55.257Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="ccdxc&#39;Blog">
-<meta name="twitter:description" content="技术源于生活">
-  <link rel="canonical" href="http://yoursite.com/tags/DP-记忆化搜索/">
+<meta name="twitter:title" content="2019年icpc沈阳网络赛D题">
+<meta name="twitter:description" content="题目链接">
+  <link rel="canonical" href="http://yoursite.com/2019/09/18/2019年icpc沈阳网络赛D题/">
 
 
 <script id="page-configurations">
@@ -99,13 +101,13 @@
   CONFIG.page = {
     sidebar: "",
     isHome: false,
-    isPost: false,
+    isPost: true,
     isPage: false,
     isArchive: false
   };
 </script>
 
-  <title>标签: DP 记忆化搜索 | ccdxc'Blog</title>
+  <title>2019年icpc沈阳网络赛D题 | ccdxc'Blog</title>
   
 
 
@@ -271,88 +273,159 @@
         <div class="content-wrap">
             
 
-    
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-    
-
-  
-
           <div id="content" class="content">
             
 
+  <div id="posts" class="posts-expand">
+      <article itemscope itemtype="http://schema.org/Article">
   
   
   
-  <div class="post-block tag">
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h1 class="collection-header">DP 记忆化搜索<small>标签</small>
+  <div class="post-block post">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/18/2019年icpc沈阳网络赛D题/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="ccdxc">
+      <meta itemprop="description" content="技术源于生活">
+      <meta itemprop="image" content="/uploads/head.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ccdxc'Blog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">2019年icpc沈阳网络赛D题
+
+          
         </h1>
-      </div>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              
+                
+              
+
+              <time title="创建时间：2019-09-18 20:56:36" itemprop="dateCreated datePublished" datetime="2019-09-18T20:56:36+08:00">2019-09-18</time>
+            </span>
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/树形DP/" itemprop="url" rel="index"><span itemprop="name">树形DP</span></a></span>
+
+                
+                
+                  ，
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/树形DP/点分治/" itemprop="url" rel="index"><span itemprop="name">点分治</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            <span class="post-meta-item" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
+            </span>
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="fa fa-comment-o"></i>
+      </span>
+        
+      
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2019/09/18/2019年icpc沈阳网络赛D题/#comments" itemprop="discussionUrl"><span class="post-comments-count valine-comment-count" data-xid="/2019/09/18/2019年icpc沈阳网络赛D题/" itemprop="commentCount"></span></a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
+        <p><a href="https://nanti.jisuanke.com/t/41403" target="_blank" rel="noopener">题目链接</a></p>
+<a id="more"></a>
+<p>换根就是先DFS一遍之后,根据第一遍DFS得到的结果去处理第二遍DFS,第二遍DFS就是将每个点都看成一个根.<br>本题令Cnt1[i][j]为以root为根,i的子树中距i的距离%3为j的点的数量.Dp1[i][j]则是i的子树中距i为j的距离路径总和.<br>这两种状态可以用一遍DFS求得, root就是自己设的根.<br>第二遍DFS就是处理每个点为根的情况.<br>考虑Cnt2[i][j], 在以root为根的情况下, 非i的子节点到i的距离%3为j的节点个数.<br>令v为当前节点, u为其父节点<br>推出式子<br>Cnt2[v][(j+len)%3] = Cnt1[u][j]-Cnt1[v][((j-len)%3+3)%3]+Cnt2[u][j].<br>其中因为u的子节点包括了v的子节点, 需要处理掉.就是减掉.在加上父亲非子节点的贡献.<br>考虑路径和.同理, 减掉多余的贡献.加上父亲节点的非子节点的贡献.</p>
 
-  
-  
+    </div>
 
-  
     
-    <div class="collection-year">
-      <h1 class="collection-header">2019</h1>
-    </div>
-  
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
+    
+    
         
-          <a class="post-title-link" href="/2019/09/11/动态规划学习/" itemprop="url">
-            <span itemprop="name">动态规划学习</span>
-          </a>
+      
+
+      <footer class="post-footer">
+          
+            
+          
+          <div class="post-tags">
+            
+              <a href="/tags/树形DP/" rel="tag"># 树形DP</a>
+            
+              <a href="/tags/点分治/" rel="tag"># 点分治</a>
+            
+          </div>
         
-      </h2>
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2019-09-11T21:32:21+08:00"
-              content="2019-09-11">
-          09-11
-        </time>
-      </div>
+        
 
-    </header>
-  </article>
+          <div class="post-nav">
+            <div class="post-nav-next post-nav-item">
+              
+                <a href="/2019/09/18/2019年icpc上海网络赛题解/" rel="next" title="2019年icpc上海网络赛题解">
+                  <i class="fa fa-chevron-left"></i> 2019年icpc上海网络赛题解
+                </a>
+              
+            </div>
 
+            <span class="post-nav-divider"></span>
 
-
-    </div>
+            <div class="post-nav-prev post-nav-item">
+              
+            </div>
+          </div>
+        
+      </footer>
+    
   </div>
   
   
   
+  </article>
 
-  
-
+  </div>
 
 
           </div>
           
+    
+    <div class="comments" id="comments"></div>
+  
 
         </div>
           
@@ -367,6 +440,11 @@
 
   <aside class="sidebar">
     <div class="sidebar-inner">
+        
+        
+        
+        
+      
 
       <ul class="sidebar-nav motion-element">
         <li class="sidebar-nav-toc">
@@ -563,6 +641,56 @@
 
   
 
+  
+    
+      
+<script type="text/x-mathjax-config">
+
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$', '$'], ['\\(', '\\)'] ],
+      processEscapes: true,
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    },
+    TeX: {
+      equationNumbers: {
+        autoNumber: 'AMS'
+      }
+    }
+  });
+
+  MathJax.Hub.Register.StartupHook('TeX Jax Ready', function() {
+    MathJax.InputJax.TeX.prefilterHooks.Add(function(data) {
+      if (data.display) {
+        var next = data.script.nextSibling;
+        while (next && next.nodeName.toLowerCase() === '#text') {
+          next = next.nextSibling;
+        }
+        if (next && next.nodeName.toLowerCase() === 'br') {
+          next.parentNode.removeChild(next);
+        }
+      }
+    });
+  });
+
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for (i = 0; i < all.length; i += 1) {
+      element = document.getElementById(all[i].inputID + '-Frame').parentNode;
+      if (element.nodeName.toLowerCase() == 'li') {
+        element = element.parentNode;
+      }
+      element.classList.add('has-jax');
+    }
+  });
+</script>
+<script>
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS-MML_HTMLorMML', () => {
+    MathJax.Hub.Typeset();
+  }, window.MathJax);
+</script>
+
+    
   
 
   
