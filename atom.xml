@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-01-01T04:00:00.000Z</updated>
+  <updated>2019-09-18T07:24:09.393Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,38 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>树形DP</title>
+    <link href="http://yoursite.com/2019/09/18/%E6%A0%91%E5%BD%A2DP/"/>
+    <id>http://yoursite.com/2019/09/18/树形DP/</id>
+    <published>2019-09-18T07:19:52.000Z</published>
+    <updated>2019-09-18T07:24:09.393Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;树形DP，即在树上进行DP。由于树固定的递归性质，树形DP一般都是递归进行的。&lt;br&gt;&amp;lt;! — more  —&amp;gt;&lt;/p&gt;
+&lt;h3 id=&quot;例题&quot;&gt;&lt;a href=&quot;#例题&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="树形DP" scheme="http://yoursite.com/categories/%E6%A0%91%E5%BD%A2DP/"/>
+    
+      <category term="OI wiki" scheme="http://yoursite.com/categories/%E6%A0%91%E5%BD%A2DP/OI-wiki/"/>
+    
+      <category term="洛谷P1352" scheme="http://yoursite.com/categories/%E6%A0%91%E5%BD%A2DP/OI-wiki/%E6%B4%9B%E8%B0%B7P1352/"/>
+    
+    
+      <category term="树形DP 洛谷P1352" scheme="http://yoursite.com/tags/%E6%A0%91%E5%BD%A2DP-%E6%B4%9B%E8%B0%B7P1352/"/>
+    
+  </entry>
   
   <entry>
     <title>动态规划学习</title>
