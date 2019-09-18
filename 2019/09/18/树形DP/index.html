@@ -89,7 +89,7 @@
 <meta property="og:site_name" content="ccdxc&#39;Blog">
 <meta property="og:description" content="树形DP，即在树上进行DP。由于树固定的递归性质，树形DP一般都是递归进行的。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-09-18T11:03:05.735Z">
+<meta property="og:updated_time" content="2019-09-18T11:06:36.637Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="树形DP">
 <meta name="twitter:description" content="树形DP，即在树上进行DP。由于树固定的递归性质，树形DP一般都是递归进行的。">
@@ -383,8 +383,9 @@
 <p>显然，我们可以推出下面两个状态转移方程（其中$x$都是$i$的儿子）:</p>
 <ul>
 <li>$ f(i , 0) = \sum  max{  f(x , 1) , f(x , 0)} $ ( 上司不参加舞会时，下属可以参加，也可以不参加)</li>
-<li>$f(i , 1) = \sum f(x , 0) + a_i$</li>
+<li>$f(i , 1) = \sum f(x , 0) + a_i$ (上司参加舞会时，属下都不会参加)</li>
 </ul>
+<p>我们可以通过 DFS，在返回上一层时更新当前节点的最优解。</p>
 <p>代码：</p>
 <pre><code>/**********************************************************
 &gt; File Name: P1352.cpp
