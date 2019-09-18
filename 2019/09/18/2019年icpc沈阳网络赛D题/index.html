@@ -89,7 +89,7 @@
 <meta property="og:site_name" content="ccdxc&#39;Blog">
 <meta property="og:description" content="题目链接">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-09-18T13:01:55.257Z">
+<meta property="og:updated_time" content="2019-09-18T13:04:58.519Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="2019年icpc沈阳网络赛D题">
 <meta name="twitter:description" content="题目链接">
@@ -367,7 +367,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p><a href="https://nanti.jisuanke.com/t/41403" target="_blank" rel="noopener">题目链接</a></p>
+        <p><strong><a href="https://nanti.jisuanke.com/t/41403" target="_blank" rel="noopener">题目链接</a></strong></p>
 <a id="more"></a>
 <p>换根就是先DFS一遍之后,根据第一遍DFS得到的结果去处理第二遍DFS,第二遍DFS就是将每个点都看成一个根.<br>本题令Cnt1[i][j]为以root为根,i的子树中距i的距离%3为j的点的数量.Dp1[i][j]则是i的子树中距i为j的距离路径总和.<br>这两种状态可以用一遍DFS求得, root就是自己设的根.<br>第二遍DFS就是处理每个点为根的情况.<br>考虑Cnt2[i][j], 在以root为根的情况下, 非i的子节点到i的距离%3为j的节点个数.<br>令v为当前节点, u为其父节点<br>推出式子<br>Cnt2[v][(j+len)%3] = Cnt1[u][j]-Cnt1[v][((j-len)%3+3)%3]+Cnt2[u][j].<br>其中因为u的子节点包括了v的子节点, 需要处理掉.就是减掉.在加上父亲非子节点的贡献.<br>考虑路径和.同理, 减掉多余的贡献.加上父亲节点的非子节点的贡献.</p>
 
