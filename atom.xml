@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-09-18T07:25:34.306Z</updated>
+  <updated>2019-09-18T10:36:32.559Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://yoursite.com/2019/09/18/%E6%A0%91%E5%BD%A2DP/"/>
     <id>http://yoursite.com/2019/09/18/树形DP/</id>
     <published>2019-09-18T07:19:52.000Z</published>
-    <updated>2019-09-18T07:25:34.306Z</updated>
+    <updated>2019-09-18T10:36:32.559Z</updated>
     
     <summary type="html">
     
@@ -37,7 +37,9 @@
       <category term="洛谷P1352" scheme="http://yoursite.com/categories/%E6%A0%91%E5%BD%A2DP/OI-wiki/%E6%B4%9B%E8%B0%B7P1352/"/>
     
     
-      <category term="树形DP 洛谷P1352" scheme="http://yoursite.com/tags/%E6%A0%91%E5%BD%A2DP-%E6%B4%9B%E8%B0%B7P1352/"/>
+      <category term="洛谷P1352" scheme="http://yoursite.com/tags/%E6%B4%9B%E8%B0%B7P1352/"/>
+    
+      <category term="树形DP" scheme="http://yoursite.com/tags/%E6%A0%91%E5%BD%A2DP/"/>
     
   </entry>
   
