@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[树形DP]]></title>
     <url>%2F2019%2F09%2F18%2F%E6%A0%91%E5%BD%A2DP%2F</url>
-    <content type="text"><![CDATA[树形DP，即在树上进行DP。由于树固定的递归性质，树形DP一般都是递归进行的。&lt;! — more —&gt; 例题]]></content>
+    <content type="text"><![CDATA[树形DP，即在树上进行DP。由于树固定的递归性质，树形DP一般都是递归进行的。 例题]]></content>
       <categories>
         <category>树形DP</category>
         <category>OI wiki</category>

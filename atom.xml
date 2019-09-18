@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-09-18T07:24:09.393Z</updated>
+  <updated>2019-09-18T07:25:34.306Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,18 +21,11 @@
     <link href="http://yoursite.com/2019/09/18/%E6%A0%91%E5%BD%A2DP/"/>
     <id>http://yoursite.com/2019/09/18/树形DP/</id>
     <published>2019-09-18T07:19:52.000Z</published>
-    <updated>2019-09-18T07:24:09.393Z</updated>
+    <updated>2019-09-18T07:25:34.306Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;树形DP，即在树上进行DP。由于树固定的递归性质，树形DP一般都是递归进行的。&lt;br&gt;&amp;lt;! — more  —&amp;gt;&lt;/p&gt;
-&lt;h3 id=&quot;例题&quot;&gt;&lt;a href=&quot;#例题&quot; class=&quot;headerlink&quot;
-        
-      
+      &lt;p&gt;树形DP，即在树上进行DP。由于树固定的递归性质，树形DP一般都是递归进行的。&lt;br&gt;
     
     </summary>
     
