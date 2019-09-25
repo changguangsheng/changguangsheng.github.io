@@ -89,7 +89,7 @@
 <meta property="og:site_name" content="ccdxc&#39;Blog">
 <meta property="og:description" content="ACM-ICPC 2019年南京赛区网络预赛 A题题目连接">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-09-25T07:42:13.570Z">
+<meta property="og:updated_time" content="2019-09-25T07:44:41.600Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="2019年icpc南京网络赛A题">
 <meta name="twitter:description" content="ACM-ICPC 2019年南京赛区网络预赛 A题题目连接">
@@ -321,7 +321,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2019-09-25 15:42:13" itemprop="dateModified" datetime="2019-09-25T15:42:13+08:00">2019-09-25</time>
+                <time title="修改时间：2019-09-25 15:44:41" itemprop="dateModified" datetime="2019-09-25T15:44:41+08:00">2019-09-25</time>
               </span>
             
           
@@ -372,11 +372,12 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>ACM-ICPC 2019年南京赛区网络预赛 A题<br><a href="https://nanti.jisuanke.com/t/41298" target="_blank" rel="noopener">题目连接</a><br><a id="more"></a></p>
+        <p><strong>ACM-ICPC 2019年南京赛区网络预赛 A题</strong><br><strong><a href="https://nanti.jisuanke.com/t/41298" target="_blank" rel="noopener">题目连接</a></strong></p>
+<a id="more"></a>
 <h3 id="题意"><a href="#题意" class="headerlink" title="题意:"></a>题意:</h3><p>有一个$n*n (n &lt;= 1e^6)$的蛇形数组，现在有$m$个点，将$m$个点的值放到一个二维平面上，有q次查询， 每次查询给出两个点的坐标，即一个⻓方形左下⻆和右上⻆，求该⻓方形所包含的值。</p>
 <h3 id="题目解析"><a href="#题目解析" class="headerlink" title="题目解析:"></a>题目解析:</h3><p>这道题有两步。</p>
 <h4 id="第一步"><a href="#第一步" class="headerlink" title="第一步:"></a>第一步:</h4><p> 首先我们要计算$m$个点的值，因为$n$很大，所以没有办法模拟的去得到每个螺旋矩阵的每一个位置的值。 所以，我们要找到规律以便$O(1)$的找个每个点的值。<br>然后我们就可以开始计算了，因为元素是一圈一圈填充进去的，所以，我们可以先计算出来所求位置元素位于第几 圈(从外向内数，第一圈的边⻓是$n$，第二圈的边⻓是$n−2$，以此类推…)上(假设是$T$)，然后先计算出前 $T−1$圈的总的数字数量，然后再计算出第T圈中小于等于所求位置数字的数字数量，就可以得到对应位置的值 了。<br>具体情况如下: 首先第$T$圈的边⻓为$n−2(T−1)=n+2T+2$，当前点$(x,y)$位于从下往上数第$y$行，从上往下数第 $n−y+1$行，从左往右数第$x$列，从右往左数第$n−x+1$列。每一圈的数字可以看作由四个⻓度为当前边⻓−1当 前边⻓-1当前边⻓−1的数字段组成。<br>那么，我们可得$(x,y)$位置的数字的值(即$val(x,y)$)为: 首先，设该元素所在的圈为第TTT圈，可得$T=min(n−x+1,n−y+1,x,y)$。那么，前$m$圈的数字个数为:</p>
-<script type="math/tex; mode=display">4 \* \frac{m \* (n - 1) + (n -2 \*(m-1) -1) }{ 2} = 4 \* m \* (n-m)</script>
+<script type="math/tex; mode=display">4 * \frac{m * (n - 1) + (n -2 *(m-1) -1) }{ 2} = 4 * m * (n-m)</script>
     </div>
 
     
